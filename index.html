@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Responsive Hero Slider With Bootstrap 4</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script
+      type="text/javascript"
+      scr="https://cdnjs.cloudflare.com/ajax/libs/animateCSS/1.2.2/jquery.animatecss.min.js"
+      defer
+    ></script>
+
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="container-fluid p-0">
+      <header class="p-3 header">
+        <div class="container">
+          <div class="align-items-center d-flex justify-content-between">
+            <img src="images/white-full.png" height="72" alt="" />
+            <div>
+              <a class="btn uld-btn-small-primary" href="#">
+                Entre em contato
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="sections">
+        <section id="main-section">
+          <div
+            id="carousel"
+            class="carousel slide hero-slides"
+            data-ride="carousel"
+          >
+            <ol class="carousel-indicators">
+              <li class="active" data-target="#carousel" data-slide-to="0"></li>
+              <li data-target="#carousel" data-slide-to="1"></li>
+              <li data-target="#carousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox" id="main-carousel"></div>
+            <a
+              class="carousel-control-prev"
+              href="#carousel"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#carousel"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </section>
+        <section>
+          <h1>sobre</h1>
+        </section>
+        <section>
+          <h1>projetos</h1>
+        </section>
+        <section>
+          <h1>contato</h1>
+        </section>
+      </div>
+      <footer class="p-3 bg-uld-primary">
+        <div class="container">
+          <div class="align-items-center d-flex justify-content-between">
+            <img src="images/white-reduced.png" height="36" alt="" />
+            <a href="#" class="uld-white"
+              >por <span class="font-weight-bold">Jonas Antunes</span> |
+              jonas@unlucky.one</a
+            >
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
