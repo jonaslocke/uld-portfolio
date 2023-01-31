@@ -55,6 +55,7 @@ body {
   justify-content: center;
   font-family: "Montserrat", sans-serif;
   background-color: var(--tertiary);
+  scroll-behavior: smooth;
 }
 #carousel .carousel-item.boat {
   background-image: url("images/bg1.jpg");
@@ -174,23 +175,21 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 16;
+  z-index: 17;
   width: 100%;
-  transition: 0.5s ease-in-out;
 }
 
 .header-scrolled {
-  background: rgb(59, 51, 85);
   background: linear-gradient(
     90deg,
     rgba(59, 51, 85, 1) 0%,
     rgba(93, 93, 129, 1) 100%
   );
-  transition: 0.5s ease-in-out;
 }
 
 section {
   height: 100vh;
+  position: relative;
 }
 
 section + section {
@@ -212,4 +211,36 @@ footer a:hover {
   color: var(--primary);
   text-decoration: none;
   background-color: var(--tertiary);
+}
+
+.about-section {
+  background: url("images/about-section.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.scroll-down {
+  position: absolute;
+  z-index: 16;
+  bottom: 24px;
+  right: 24px;
+  transition: all 1s ease-in-out;
+  animation: spin 2.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: translateY(0);
+  }
+  8% {
+    transform: translateY(20%);
+  }
+  68% {
+    transform: translateY(0);
+  }
+  76% {
+    transform: translateY(20%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
 }

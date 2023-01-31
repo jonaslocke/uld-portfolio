@@ -97,11 +97,14 @@ const carouselItemsText = [
 
 const controlScroll = () => {
   const header = $("header");
+  const scrollDownElement = $("#scroll-down-element");
   window.addEventListener("scroll", () => {
     if (window.scrollY >= 280) {
-      ac("header-scrolled", header);
+      ac("header-scrolled animate", header);
+      cc("d-block", "d-none", scrollDownElement);
     } else {
       rc("header-scrolled", header);
+      cc("d-none", "d-block", scrollDownElement);
     }
   });
 };
