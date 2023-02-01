@@ -55,8 +55,19 @@ body {
   justify-content: center;
   font-family: "Montserrat", sans-serif;
   background-color: var(--tertiary);
+  color: var(--white);
   scroll-behavior: smooth;
 }
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: bolder;
+  text-transform: uppercase;
+  letter-spacing: -0.07em;
+}
+
 #carousel .carousel-item.boat {
   background-image: url("images/bg1.jpg");
 }
@@ -193,10 +204,6 @@ section {
 }
 
 section + section {
-  padding-top: 104px;
-}
-
-section:last-child {
   padding-top: 172px;
 }
 
@@ -224,10 +231,10 @@ footer a:hover {
   bottom: 24px;
   right: 24px;
   transition: all 1s ease-in-out;
-  animation: spin 2.5s linear infinite;
+  animation: move-down 2.5s linear infinite;
 }
 
-@keyframes spin {
+@keyframes move-down {
   0% {
     transform: translateY(0);
   }
@@ -243,4 +250,35 @@ footer a:hover {
   100% {
     transform: translateY(0%);
   }
+}
+
+.quote {
+  position: relative;
+  letter-spacing: 0.03em;
+  margin-bottom: 0.5rem;
+  font-size: 14px;
+}
+
+.quote:before {
+  content: "“";
+  position: absolute;
+  left: -0.7em;
+}
+
+.quote:after {
+  content: "”";
+  margin-right: -1rem;
+}
+
+.quote--container {
+  width: 75%;
+  border-bottom: 2px dotted var(--tertiary);
+  padding-bottom: 0.5rem;
+  margin: 36px 24px;
+}
+
+.quote--author {
+  font-size: 0.8rem;
+  text-align: right;
+  font-weight: 300;
 }
