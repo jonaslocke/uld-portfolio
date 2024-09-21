@@ -46,7 +46,6 @@
       ]
     }
   },
-  // file associations
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
