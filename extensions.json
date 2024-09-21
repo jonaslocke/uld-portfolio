@@ -1,0 +1,25 @@
+{
+  "extensionIds": [
+    "formulahendry.auto-rename-tag",
+    "alefragnani.Bookmarks",
+    "usernamehw.errorlens",
+    "dsznajder.es7-react-js-snippets",
+    "dbaeumer.vscode-eslint",
+    "firsttris.vscode-jest-runner",
+    "esbenp.prettier-vscode",
+    "YoavBls.pretty-ts-errors",
+    "vdanchenkov.tailwind-class-sorter",
+    "bradlc.vscode-tailwindcss",
+    "meganrogge.template-string-converter",
+    "rangav.vscode-thunder-client",
+    "Gruntfuggly.todo-tree",
+    "ChakrounAnas.turbo-console-log",
+    "wix.vscode-import-cost",
+    "dzhavat.bracket-pair-toggler",
+    "PKief.material-icon-theme",
+    "enkia.tokyo-night",
+    "ms-vscode-remote.remote-wsl",
+    "yzhang.markdown-all-in-one",
+    "shd101wyy.markdown-preview-enhanced"
+  ]
+}
